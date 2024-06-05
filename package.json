@@ -1,0 +1,26 @@
+{
+  "name": "telegram-bot-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs",
+    "lint": "eslint --cache .",
+    "format": "prettier --cache --write .",
+    "typecheck": "nitropack prepare && tsc"
+  },
+  "dependencies": {
+    "nitropack": "latest",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config": "^3.12.1",
+    "@sxzz/prettier-config": "^2.0.2",
+    "eslint": "^9.4.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.4.5"
+  },
+  "prettier": "@sxzz/prettier-config"
+}
